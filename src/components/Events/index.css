@@ -1,0 +1,18 @@
+/* Write your CSS here */
+.container {
+  display: flex;
+}
+.event-container {
+  font-family: 'roboto';
+  color: #ffffff;
+  width: 50%;
+  background-color: #475569;
+  padding: 10px;
+}
+h1 {
+  padding-left: 30px;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
