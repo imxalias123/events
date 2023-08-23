@@ -8,11 +8,12 @@ const registrationEventStatus = {
 const ActiveEventRegistrationDetails = props => {
   const {activeStatusConstants} = props
 
-  const registrationInitial = () => (
-    <div>
-      <p>click on an event, to view its registration details</p>
-    </div>
-  )
+  const registrationInitial = () =>
+    +(
+      <div>
+        <p>click on an event, to view its registration details</p>
+      </div>
+    )
 
   const registrationYetToRegister = () => (
     <div>
@@ -64,7 +65,7 @@ const ActiveEventRegistrationDetails = props => {
     }
   }
 
-  return <div>{activeEventRegistrationDetails}</div>
+  return <div>{activeEventRegistrationDetails()}</div>
 }
 
 export default ActiveEventRegistrationDetails
