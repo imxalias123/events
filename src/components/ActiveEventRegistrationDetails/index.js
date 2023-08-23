@@ -8,18 +8,17 @@ const registrationEventStatus = {
 const ActiveEventRegistrationDetails = props => {
   const {activeStatusConstants} = props
 
-  const registrationInitial = () =>
-    +(
-      <div>
-        <p>click on an event, to view its registration details</p>
-      </div>
-    )
+  const registrationInitial = () => (
+    <div>
+      <p>click on an event, to view its registration details</p>
+    </div>
+  )
 
   const registrationYetToRegister = () => (
     <div>
       <img
         src="https://assets.ccbp.in/frontend/react-js/events-register-img.png"
-        alt="yet to resgister"
+        alt="yet to register"
       />
       <p>
         A live performance brings so much to your relationship with dance.
@@ -37,7 +36,7 @@ const ActiveEventRegistrationDetails = props => {
         src="https://assets.ccbp.in/frontend/react-js/events-regestered-img.png"
         alt="registered"
       />
-      <p>You have already registered for the event</p>
+      <h1>You have already registered for the event</h1>
     </div>
   )
 
